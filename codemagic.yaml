@@ -1,0 +1,21 @@
+workflows:
+  android:
+    name: Blocky Graphics Build
+    instance_type: mac_mini
+    environment:
+      groups:
+        - keystore
+      vars:
+        - GRADLE_OPTS: "-Xmx2048m -Dorg.gradle.daemon=false"
+    scripts:
+      - name: Build Android APK
+        script: |
+          cd $CM_BUILD_DIR
+          ./gradlew assembleRelease --no-daemon
+    artifacts:
+      - app/build/outputs/apk/release/*.apk
+    publishing:
+      email:
+        recipients:
+          - bustamanteharie291@gmail.com
+          
