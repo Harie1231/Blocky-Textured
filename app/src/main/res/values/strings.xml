@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Blocky Graphics</string>
+    <string name="checking_opengl">Checking OpenGL support...</string>
+    <string name="device_supported">✅ DEVICE SUPPORTED</string>
+    <string name="device_unsupported">❌ UNSUPPORTED DEVICE</string>
+    <string name="apply_settings">🎨 Apply Blocky Settings</string>
+    <string name="restore_default">↩️ Restore Default</string>
+    <string name="requires_opengl">⚠️ Requires OpenGL ES 3.0 or higher.</string>
+</resources>
