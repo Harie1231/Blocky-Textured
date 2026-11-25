@@ -1,7 +1,7 @@
 workflows:
   android:
     name: Blocky Graphics Build
-    instance_type: standard
+    instance_type: linux
     environment:
       vars:
         GRADLE_OPTS: "-Xmx2048m -Dorg.gradle.daemon=false"
